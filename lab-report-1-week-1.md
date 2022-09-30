@@ -6,7 +6,7 @@ Go to the Visual Studio Code website https://code.visualstudio.com/. Follow the 
 2.Remotely Connecting: 
 Open a terminal in VSCode.  Using ssh remote connect to ieng6 sever.
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab1_02.png)
-3.Trying Some Commands
+3.Trying Some Commands: 
 Try to run some commands such as "cd ~", "cd", "ls -a", "ls -lat", etc. And try "cp /home/linux/ieng6/cs15lfa22/public/hello.txt ~/" and "cat /home/linux/ieng6/cs15lfa22/public/hello.txt".
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab1_03.png)
 4.Moving Files with scp: 
