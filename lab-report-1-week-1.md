@@ -22,7 +22,18 @@ cat /home/linux/ieng6/cs15lfa22/public/hello.txt : this command show content of 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab1_03.png)
 
 ## 4.Moving Files with scp
-Create a file on client computer called WhereAmI.java and put in specific code. Go to the directory of WhereAmI.java and using scp to copy WhereAmI.java to server. Go to server, type in "javac WhereAmI.java" and "java WhereAmI"
+Create a file on client computer called WhereAmI.java and put in code below.  
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```   
+Go to the directory of WhereAmI.java and using "scp" to copy WhereAmI.java to server. Go to server, type in "javac WhereAmI.java" and "java WhereAmI"
 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab1_04.png)
 
