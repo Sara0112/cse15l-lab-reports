@@ -3,3 +3,5 @@
 ## 1.Search Engine
 
 ## 2.Bugs
+
+### (1) Bug in reverseInPlace method 
