@@ -81,4 +81,8 @@ static void reverseInPlace(int[] arr) {
 The input is {"1","3"}  and {"2","4"} and the expected output is {"1","2","3","4"}.   
 
 - The symptom (the failing test output)  
+![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_Bug_02.png)  
 
+The symptom is OutOfMemoryError. The test never stop.    
+
+- The bug (the code fix needed)  
