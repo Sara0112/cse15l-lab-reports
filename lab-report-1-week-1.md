@@ -79,6 +79,19 @@ and your password to copy the public key to the .ssh folder in server.   In the 
 Therefore, the problem solved!
 
 ## 6.Optimizing Remote Running
-Try to write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit. Try to use semicolons to run multiple commands on the same line in most terminals. Try to use the up-arrow on your keyboard to recall the last command that was run.
-
+1. Try to write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit. For example:
+```
+ssh senkhjargal@ieng6.ucsd.edu "ls"
+```  
+you can see all directories and files in server home will be printed.
+2. Try to use semicolons to run multiple commands on the same line in most terminals. For example:   
+```
+cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
+```
+you can see that OtherMain.java is a copy version of WhereAmI.java and OtherMain.class is been generated. Also, WhereAmI is been run and you can see the result including operation system name, user name, user home directory and user current directory.
+3. Try to use the up-arrow on your keyboard to recall the last command that was run. For example,   
+```
+cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
+```
+is the last command that was run. And I push the up-arrow, the command showed. 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab1_06.png)
