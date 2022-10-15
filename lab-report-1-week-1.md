@@ -11,7 +11,7 @@ Open a terminal in VSCode.  Using ssh remote connect to ieng6 sever.
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab1_02.png)
 
 ## 3.Trying Some Commands
-Try to run some commands below.
+Try to run some commands below.  
 cd ~ : this command is used to change directory to the home directory.  
 cd : this command also work same as cd ~ command.  
 ls -a : this command list all files including hidden files.    
