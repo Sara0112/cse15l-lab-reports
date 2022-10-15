@@ -53,6 +53,49 @@ class SearchEngine {
 }
 ```
 
+Type in
+```
+javac Server.java SearchEngine.java 
+java SearchEngine 4000   
+```
+And visit http://localhost:4000.   
+![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_01.png)  
+Add anewstringtoadd, pineapple and apple
+```
+/add?s=anewstringtoadd
+
+/add?s=pineapple
+
+/add?s=apple
+```
+![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_02.png)  
+![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_03.png)  
+![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_04.png)  
+
+Add call handleRequest(URI url) function. And the code 
+
+
+Search app
+```
+/search?s=app
+```  
+![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_05.png) 
+ 
+Add also call handleRequest(URI url) function. And the code 
+```
+else if (url.getPath().equals("/search")) {
+            String result = "";
+            String[] parameters = url.getQuery().split("=");
+            for(int i = 0; i < strList.size(); i+=1){
+                if(strList.get(i).contains(parameters[1])){
+                    result += strList.get(i);
+                    result += " ";
+                }
+            }
+            return String.format("Result: %s", result);
+        }
+```
+
 ## 2.Bugs
 
 ### (1) Bug in reverseInPlace method 
