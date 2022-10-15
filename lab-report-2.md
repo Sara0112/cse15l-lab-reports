@@ -5,15 +5,20 @@
 ## 2.Bugs
 
 ### (1) Bug in reverseInPlace method 
-- The failure-inducing input is "2,3,4" and the expected output is "4,3,2"
+- The failure-inducing input (the code of the test)  
+
 ```
 public void testReverseInPlace() {
     int[] input1 = { 2,3,4 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 4,3,2 }, input1);
 }
-```
+```    
+
+The input is "2,3,4" and the expected output is "4,3,2".  
+
 - The symptom (the failing test output)  
   
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_Bug_01.png)  
 
+The expected output is "4,3,2", but the output is "4,3,4".  
