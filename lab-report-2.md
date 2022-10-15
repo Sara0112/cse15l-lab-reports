@@ -57,3 +57,28 @@ static void reverseInPlace(int[] arr) {
 ```    
 
 
+### (2) Bug in merge method
+
+- The failure-inducing input (the code of the test)  
+```
+	public void merge() {
+    List<String> inputList1 = new ArrayList<String>();
+    inputList1.add("1");
+    inputList1.add("3");
+    List<String> inputList2 = new ArrayList<String>();
+    inputList2.add("2");
+    inputList2.add("4");
+    List<String> expcList = new ArrayList<String>();
+    expcList.add("1");
+    expcList.add("2");
+    expcList.add("3");
+    expcList.add("4");
+    List<String> outputList = ListExamples.merge(inputList1,inputList2);
+    assertEquals(outputList, expcList);
+	}
+```
+
+The input is {"1","3"}  and {"2","4"} and the expected output is {"1","2","3","4"}.   
+
+- The symptom (the failing test output)  
+
