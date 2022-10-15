@@ -95,5 +95,6 @@ you can see that OtherMain.java is a copy version of WhereAmI.java and OtherMain
 ```
 cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
 ```
-is the last command that was run. And I push the up-arrow, the command showed. 
+is the last command that was run. And I push the up-arrow, the command showed.   
+
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab1_06.png)
