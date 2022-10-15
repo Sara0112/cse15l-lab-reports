@@ -84,11 +84,13 @@ Therefore, the problem solved!
 ssh senkhjargal@ieng6.ucsd.edu "ls"
 ```  
 you can see all directories and files in server home will be printed.  
+  
 2. Try to use semicolons to run multiple commands on the same line in most terminals. For example:   
 ```
 cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
 ```
 you can see that OtherMain.java is a copy version of WhereAmI.java and OtherMain.class is been generated. Also, WhereAmI is been run and you can see the result including operation system name, user name, user home directory and user current directory.  
+  
 3. Try to use the up-arrow on your keyboard to recall the last command that was run. For example,   
 ```
 cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
