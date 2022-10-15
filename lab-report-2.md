@@ -86,3 +86,16 @@ The input is {"1","3"}  and {"2","4"} and the expected output is {"1","2","3","4
 The symptom is OutOfMemoryError. The test never stop.    
 
 - The bug (the code fix needed)  
+```
+while(index2 < list2.size()) {
+  result.add(list2.get(index2));
+  index1 += 1;
+}
+```   
+The bug is that the while loop cannot stop because the index2 is keep the same but index1 is increasing. The code should be changed to:
+```
+while(index2 < list2.size()) {
+  result.add(list2.get(index2));
+  index2 += 1;
+}
+```  
