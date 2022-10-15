@@ -75,7 +75,8 @@ to check .ssh folder is been made. Then, go to the client and type in
 ```
 scp /Users/sara/.ssh/id_rsa.pub senkhjargal@ieng6.ucsd.edu:~/.ssh/authorized_keys
 ```
-and your password to copy the public key to the .ssh folder in server. In the end, login to server again and this time, I don't need to type in password. 
+and your password to copy the public key to the .ssh folder in server.   In the end, login to server again and this time, I don't need to type in password.  
+Therefore, the problem solved!
 
 ## 6.Optimizing Remote Running
 Try to write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit. Try to use semicolons to run multiple commands on the same line in most terminals. Try to use the up-arrow on your keyboard to recall the last command that was run.
