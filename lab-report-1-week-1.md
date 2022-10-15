@@ -37,13 +37,23 @@ Go to the directory of WhereAmI.java and using "scp" to copy WhereAmI.java to se
 ```
 scp WhereAmI.java senkhjargal@ieng6.ucsd.edu:~/
 ```
-Go to server, type in 
+Go to server, type in
 ```
 javac WhereAmI.java
 java WhereAmI
 ```
 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab1_04.png)
+After type in 
+```
+javac WhereAmI.java
+java WhereAmI
+```
+we can see that  
+Linux : the operation system name.   
+senkhjargal : the user name.  
+/home/linux/ieng6/oce/74/senkhjargal : the user home directory.  
+/home/linux/ieng6/oce/74/senkhjargal : the user current directory.  
 
 ## 5.Setting an SSH Key
 Since every time we log in or run scp, we have to type our password. We use SSH Key to avoid this repetitive, frustrating task. Run "ssh-keygen" and press enters. This created two new files on your system; the private key (in a file id_rsa) and the public key (in a file id_rsa.pub), stored in the .ssh directory on your computer. Copy them to server .ssh folder. Try ssh again and you will find that you don't need to type password anymore.
