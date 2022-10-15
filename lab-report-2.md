@@ -1,6 +1,57 @@
 # Lab Report 2
 
 ## 1.Search Engine
+The code for Simplest Search Engine from week 2:  
+
+```
+import java.util.ArrayList;
+import java.io.IOException;
+import java.net.URI;
+
+class Handler implements URLHandler {
+    
+    ArrayList<String> strList = new ArrayList<String>();
+
+    public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            return String.format("Search Engine");
+        } else if (url.getPath().equals("/search")) {
+            String result = "";
+            String[] parameters = url.getQuery().split("=");
+            for(int i = 0; i < strList.size(); i+=1){
+                if(strList.get(i).contains(parameters[1])){
+                    result += strList.get(i);
+                    result += " ";
+                }
+            }
+            return String.format("Result: %s", result);
+        } else {
+            System.out.println("Path: " + url.getPath());
+            if (url.getPath().contains("/add")) {
+                String[] parameters = url.getQuery().split("=");
+                if (parameters[0].equals("s")) {
+                    strList.add(parameters[1]);
+                    return String.format("Add: %s", parameters[1]);
+                }   
+            }
+            return "404 Not Found!";
+        }
+    }
+}
+
+class SearchEngine {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
 
 ## 2.Bugs
 
