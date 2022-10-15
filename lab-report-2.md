@@ -92,7 +92,10 @@ while(index2 < list2.size()) {
   index1 += 1;
 }
 ```   
-The bug is that the while loop cannot stop because the index2 is keep the same but index1 is increasing. The code should be changed to:
+
+- Connection between the symptom and the bug.  
+
+The symptom is caused by the bug because the while loop cannot stop since the index2 keep the same and less than list2.size() forever. Therefore, the code should be changed to:
 ```
 while(index2 < list2.size()) {
   result.add(list2.get(index2));
