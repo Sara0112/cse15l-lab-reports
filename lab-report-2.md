@@ -7,10 +7,10 @@
 ### (1) Bug in reverseInPlace method 
 - The failure-inducing input (the code of the test)
 ```
-	@Test 
-	public void testReverseInPlace() {
+@Test 
+public void testReverseInPlace() {
     int[] input1 = { 2,3,4 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 4,3,2 }, input1);
-	}
+}
 ```
