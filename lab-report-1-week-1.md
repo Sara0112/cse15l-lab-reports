@@ -59,7 +59,23 @@ senkhjargal : the user name.
 Since every time we log in or run scp, we have to type our password. We use SSH Key to avoid this repetitive, frustrating task. Run "ssh-keygen" and press enters. This created two new files on your system; the private key (in a file id_rsa) and the public key (in a file id_rsa.pub), stored in the .ssh directory on your computer. Copy them to server .ssh folder. Try ssh again and you will find that you don't need to type password anymore.
 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab1_05_01.png)
+
+The screenshot above shows that running "ssh-keygen", the identification file is generated and saved in "/Users/sara/.ssh/id_rsa" and the public key is generated and saved in "/Users/sara/.ssh/id_rsa.pub". Then, go to the server. 
+
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab1_05_02.png)
+The screenshot above shows that in the server, type in
+```
+mkdir .ssh
+```
+to create the folder .ssh and using 
+```
+ls -a
+```
+to check .ssh folder is been made. Then, go to the client and type in
+```
+scp /Users/sara/.ssh/id_rsa.pub senkhjargal@ieng6.ucsd.edu:~/.ssh/authorized_keys
+```
+and your password to copy the public key to the .ssh folder in server. In the end, login to server again and this time, I don't need to type in password. 
 
 ## 6.Optimizing Remote Running
 Try to write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit. Try to use semicolons to run multiple commands on the same line in most terminals. Try to use the up-arrow on your keyboard to recall the last command that was run.
