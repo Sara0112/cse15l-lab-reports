@@ -5,7 +5,7 @@
 ## 2.Bugs
 
 ### (1) Bug in reverseInPlace method 
-- The failure-inducing input is "2,3,4"
+- The failure-inducing input is "2,3,4" and the expected output is "4,3,2"
 ```
 public void testReverseInPlace() {
     int[] input1 = { 2,3,4 };
@@ -13,3 +13,4 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{ 4,3,2 }, input1);
 }
 ```
+- The symptom (the failing test output) is "4,3,4"
