@@ -11,7 +11,13 @@ Open a terminal in VSCode.  Using ssh remote connect to ieng6 sever.
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab1_02.png)
 
 ## 3.Trying Some Commands
-Try to run some commands such as "cd ~", "cd", "ls -a", "ls -lat", etc. And try "cp /home/linux/ieng6/cs15lfa22/public/hello.txt ~/" and "cat /home/linux/ieng6/cs15lfa22/public/hello.txt".
+Try to run some commands below.
+cd ~ : this command is used to change directory to the home directory. 
+cd : this command also work same as cd ~ command. 
+ls -a : this command list all files including hidden files
+ls -lat : this command long lists all the directories and file names by sorting the modified date in reverse order.
+cp /home/linux/ieng6/cs15lfa22/public/hello.txt ~/ : this command copy file "/home/linux/ieng6/cs15lfa22/public/hello.txt" to current diractory.
+cat /home/linux/ieng6/cs15lfa22/public/hello.txt : this command show content of given filename "/home/linux/ieng6/cs15lfa22/public/hello.txt".
 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab1_03.png)
 
