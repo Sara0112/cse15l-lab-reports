@@ -33,7 +33,15 @@ class WhereAmI {
   }
 }
 ```   
-Go to the directory of WhereAmI.java and using "scp" to copy WhereAmI.java to server. Go to server, type in "javac WhereAmI.java" and "java WhereAmI"
+Go to the directory of WhereAmI.java and using "scp" to copy WhereAmI.java to server.
+```
+scp WhereAmI.java senkhjargal@ieng6.ucsd.edu:~/
+```
+Go to server, type in "javac WhereAmI.java" and "java WhereAmI"
+```
+javac WhereAmI.java
+java WhereAmI
+```
 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab1_04.png)
 
