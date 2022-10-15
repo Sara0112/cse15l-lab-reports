@@ -5,9 +5,8 @@
 ## 2.Bugs
 
 ### (1) Bug in reverseInPlace method 
-- The failure-inducing input (the code of the test)
+- The failure-inducing input is "2,3,4"
 ```
-@Test 
 public void testReverseInPlace() {
     int[] input1 = { 2,3,4 };
     ArrayExamples.reverseInPlace(input1);
