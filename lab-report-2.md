@@ -22,3 +22,38 @@ The input is "2,3,4" and the expected output is "4,3,2".
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_Bug_01.png)  
 
 The expected output is "4,3,2", but the output is "4,3,4".  
+
+- The bug (the code fix needed)  
+Original code: 
+```
+static void reverseInPlace(int[] arr) {
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = arr[arr.length - i - 1];
+  }
+}
+```   
+
+The bug is in the line
+```
+for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+}
+```   
+- Connection between the symptom and the bug. 
+Since the the first element was changed to the last element before the last element use the first element to cover itself. This is the reason why the last element does not be changed to the original first element. For example, in the input array "2,3,4", the first element change to the last element and the array changed to "4,3,4". When the last element need to change to the first element, the first element is already changed to "4". So, the final result is "4,3,4".  
+
+To solve this issue, we need to use a temporary place to store the original element before doing switch two elements each time. Also, the for loop do not need to go through all element in the array but go through the first to the middle element.  
+Fixed code:  
+
+```
+static void reverseInPlace(int[] arr) {
+  int n = arr.length;
+  for(int i = 0; i < n/2; i += 1) {
+    int temp = arr[i];
+    arr[i] = arr[n - i - 1];
+    arr[n - i - 1] = temp;
+  }
+}
+```    
+
+
