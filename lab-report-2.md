@@ -73,7 +73,15 @@ Add anewstringtoadd, pineapple and apple
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_04.png)  
 
 Add call handleRequest(URI url) function. And the code 
-
+```
+if (url.getPath().contains("/add")) {
+                String[] parameters = url.getQuery().split("=");
+                if (parameters[0].equals("s")) {
+                    strList.add(parameters[1]);
+                    return String.format("Add: %s", parameters[1]);
+                }   
+            }
+```
 
 Search app
 ```
