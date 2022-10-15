@@ -39,7 +39,7 @@ for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
 }
 ```   
-- Connection between the symptom and the bug. 
+- Connection between the symptom and the bug.   
 Since the the first element was changed to the last element before the last element use the first element to cover itself. This is the reason why the last element does not be changed to the original first element. For example, in the input array "2,3,4", the first element change to the last element and the array changed to "4,3,4". When the last element need to change to the first element, the first element is already changed to "4". So, the final result is "4,3,4".  
 
 To solve this issue, we need to use a temporary place to store the original element before doing switch two elements each time. Also, the for loop do not need to go through all element in the array but go through the first to the middle element.  
