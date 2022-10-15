@@ -13,5 +13,7 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{ 4,3,2 }, input1);
 }
 ```
-- The symptom (the failing test output) is "4,3,4"
-![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_Bug_01.png)
+- The symptom (the failing test output)  
+  
+![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_Bug_01.png)  
+
