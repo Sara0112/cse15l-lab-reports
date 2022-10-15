@@ -37,7 +37,7 @@ Go to the directory of WhereAmI.java and using "scp" to copy WhereAmI.java to se
 ```
 scp WhereAmI.java senkhjargal@ieng6.ucsd.edu:~/
 ```
-Go to server, type in "javac WhereAmI.java" and "java WhereAmI"
+Go to server, type in 
 ```
 javac WhereAmI.java
 java WhereAmI
