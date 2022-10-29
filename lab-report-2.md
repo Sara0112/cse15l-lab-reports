@@ -102,6 +102,7 @@ Using "localhost:4000/add?s=anewstringtoadd" as an example. Since the path follo
 /search?s=app
 ```  
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_05.png) 
+
 The screenshot above calls handleRequest(URI url) function. And the code
 ```
 else if (url.getPath().equals("/search")) {
