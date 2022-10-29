@@ -1,7 +1,7 @@
 # Lab Report 2
 
 ## 1.Search Engine
-The code for Simplest Search Engine from week 2:  
+### (1)The code for Simplest Search Engine 
 The class searchEngine is the main class including the main method which starts the server with input port number (the args[0]) and the server start a new Handler. 
 
 The class Handler implements URLHandler interface. strList is an ArrayList of String which store the list of words. The method handleRequest is the main method for the search engine, handleRequest can adding words and searching words. If the path following with "/", the server will show "Search Engine". If the path following with "/search", that means searching words. String result is used to store the searching results. String[] parameters is used to store the strings after "/search" splited by "=". parameters[0] is the String before "=" and the parameters[1] is the String need to be searched. Using a for loop go through strList and if the i'th element of strList contains parameters[1], result will add the element with a space. After the for loop, the server will show the result. If the path following with "/add", that means adding words. String[] parameters is used to store the strings after "/add" splited by "=". parameters[0] is the String before "=" and the parameters[1] is the String need to be added. If the parameters[0] is equal to "s", the strList will add parameters[1]. In the end the server will show the new adding words.
@@ -56,7 +56,7 @@ class SearchEngine {
 }
 ```
 
-1. Open the server
+### (2) Open the server
 Type in
 ```
 javac Server.java SearchEngine.java 
@@ -72,7 +72,7 @@ if (url.getPath().equals("/")) {
 ``` 
 The intput url is "localhost:4000/". Since url.getPath() equals "/", the server shows "Search Engine". If url.getPath() did not equals "/", the server will not show "Search Engine".
 
-2. Add "anewstringtoadd", "pineapple" and "apple"
+### (3) Add "anewstringtoadd", "pineapple" and "apple"
 ```
 /add?s=anewstringtoadd
 
@@ -97,7 +97,7 @@ if (url.getPath().contains("/add")) {
 Using "localhost:4000/add?s=anewstringtoadd" as an example. Since the path following with "/add", that means adding words. String[] parameters is used to store the strings after "/add" splited by "=". parameters[0] is "s" and the parameters[1] is "anewstringtoadd" need to be added. Since the parameters[0] is equal to "s", the strList will add "anewstringtoadd". And the server shows "Add: anewstringtoadd". If the word after "=" replaced by other word, like "pineapple". Then, the "pineapple" is parameters[1] and will be added to strList.
 
 
-3. Search "app"
+### (4) Search "app"
 ```
 /search?s=app
 ```  
