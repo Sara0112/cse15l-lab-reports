@@ -83,6 +83,7 @@ The intput url is "localhost:4000/". Since url.getPath() equals "/", the server 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_02.png)  
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_03.png)  
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_04.png)  
+
 The screenshots above call handleRequest(URI url) function. And the code 
 ```
 if (url.getPath().contains("/add")) {
@@ -115,6 +116,7 @@ else if (url.getPath().equals("/search")) {
             return String.format("Result: %s", result);
         }
 ```
+
 The intput url is "localhost:4000/search?s=app". Since url.getPath() equals "/search", that means searching words. String result is used to store the searching results. String[] parameters is used to store the strings after "/search" splited by "=". In this case, parameters[0] is "s" and the parameters[1] is "app". Using a for loop go through strList and if the i'th element of strList contains "app", result will add the element with a space. After the for loop, the server shows the result. In this case, the server shows "Result: pineapple apple". If the word after "=" replaced by other word, like "pineapple". Then, the "pineapple" is parameters[1] and will be searched in strList. And the result will be "Result: pineapple". 
 
 ## 2.Bugs
