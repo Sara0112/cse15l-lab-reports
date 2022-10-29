@@ -68,7 +68,8 @@ The screenshot above call handleRequest(URI url) function. And the code
 if (url.getPath().equals("/")) {
             return String.format("Search Engine");
 }
-``` The intput url is "localhost:4000/". Since url.getPath() equals "/", the server shows "Search Engine". If url.getPath() did not equals "/", the server will not show "Search Engine".
+``` 
+The intput url is "localhost:4000/". Since url.getPath() equals "/", the server shows "Search Engine". If url.getPath() did not equals "/", the server will not show "Search Engine".
 
 Add anewstringtoadd, pineapple and apple
 ```
