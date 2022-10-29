@@ -86,7 +86,7 @@ if (url.getPath().contains("/add")) {
                 }   
             }
 ```
-Using "localhost:4000/add?s=anewstringtoadd" as an example. Since the path following with "/add", that means adding words. String[] parameters is used to store the strings after "/add" splited by "=". parameters[0] is "s" and the parameters[1] is the String "anewstringtoadd" need to be added. Since the parameters[0] is equal to "s", the strList will add "anewstringtoadd". And the server shows "Add: anewstringtoadd". If the word after "=" replaced by other word, like "pineapple". Then, the "pineapple" is parameters[1] and will be added to strList.
+Using "localhost:4000/add?s=anewstringtoadd" as an example. Since the path following with "/add", that means adding words. String[] parameters is used to store the strings after "/add" splited by "=". parameters[0] is "s" and the parameters[1] is "anewstringtoadd" need to be added. Since the parameters[0] is equal to "s", the strList will add "anewstringtoadd". And the server shows "Add: anewstringtoadd". If the word after "=" replaced by other word, like "pineapple". Then, the "pineapple" is parameters[1] and will be added to strList.
 
 
 Search "app"
