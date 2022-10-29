@@ -56,6 +56,7 @@ class SearchEngine {
 }
 ```
 
+1. Open the server
 Type in
 ```
 javac Server.java SearchEngine.java 
@@ -71,7 +72,7 @@ if (url.getPath().equals("/")) {
 ``` 
 The intput url is "localhost:4000/". Since url.getPath() equals "/", the server shows "Search Engine". If url.getPath() did not equals "/", the server will not show "Search Engine".
 
-Add anewstringtoadd, pineapple and apple
+2. Add "anewstringtoadd", "pineapple" and "apple"
 ```
 /add?s=anewstringtoadd
 
@@ -95,7 +96,7 @@ if (url.getPath().contains("/add")) {
 Using "localhost:4000/add?s=anewstringtoadd" as an example. Since the path following with "/add", that means adding words. String[] parameters is used to store the strings after "/add" splited by "=". parameters[0] is "s" and the parameters[1] is "anewstringtoadd" need to be added. Since the parameters[0] is equal to "s", the strList will add "anewstringtoadd". And the server shows "Add: anewstringtoadd". If the word after "=" replaced by other word, like "pineapple". Then, the "pineapple" is parameters[1] and will be added to strList.
 
 
-Search "app"
+3. Search "app"
 ```
 /search?s=app
 ```  
