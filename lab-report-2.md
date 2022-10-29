@@ -63,7 +63,12 @@ java SearchEngine 4000
 ```
 And visit http://localhost:4000.   
 ![Image](https://sara0112.github.io/cse15l-lab-reports/Lab2_01.png)  
-The screenshot above using the handleRequest method. The intput url is "localhost:4000/". Since url.getPath() equals "/", the server shows "Search Engine". If url.getPath() did not equals "/", the server will not show "Search Engine".
+The screenshot above call handleRequest(URI url) function. And the code 
+```
+if (url.getPath().equals("/")) {
+            return String.format("Search Engine");
+}
+``` The intput url is "localhost:4000/". Since url.getPath() equals "/", the server shows "Search Engine". If url.getPath() did not equals "/", the server will not show "Search Engine".
 
 Add anewstringtoadd, pineapple and apple
 ```
