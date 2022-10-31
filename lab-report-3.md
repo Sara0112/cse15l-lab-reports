@@ -12,7 +12,7 @@ The result is returning the file with the name of chapter-1.txt contains both ca
 ```
 find technical -iname chapter-1.txt
 ```
-![Image](https://sara0112.github.io/cse15l-lab-reports/Lab3_01.png)
+![Image](https://sara0112.github.io/cse15l-lab-reports/lab3_01.png)
 
 Examples 2:
 Find the file ChAPtER-1.txt contains both capital and small letters in the folder technical.
@@ -21,7 +21,7 @@ The result is returning the file with the name of ChAPtER-1.txt contains both ca
 ```
 find technical -iname ChAPtER-1.txt
 ```
-![Image](https://sara0112.github.io/cse15l-lab-reports/Lab3_02.png)
+![Image](https://sara0112.github.io/cse15l-lab-reports/lab3_02.png)
 
 Examples 3:
 Find the files contains "CH", including both capital and small letters, in the folder technical.
@@ -30,7 +30,7 @@ The result is returning the file with the name contains "CH", including both cap
 ```
 find technical -iname "CH*"
 ```
-![Image](https://sara0112.github.io/cse15l-lab-reports/Lab3_03.png)
+![Image](https://sara0112.github.io/cse15l-lab-reports/lab3_03.png)
 
 
 ### (2) -type 
