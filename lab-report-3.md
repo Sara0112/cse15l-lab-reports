@@ -25,7 +25,7 @@ find technical -iname ChAPtER-1.txt
 
 ####Examples 3:
 Find the files contains "CH", including both capital and small letters, in the folder technical.
-The result is returning the path of the file with the name contains "CH", including both capital and small letters, in the folder technical. Same as expected.
+The result is returning the path of the files with the name contains "CH", including both capital and small letters, in the folder technical. Same as expected.
 
 ```
 find technical -iname "CH*"
@@ -55,8 +55,34 @@ find technical -type d -name 911report
 ![Image](https://sara0112.github.io/cse15l-lab-reports/lab3_05.png)
 #### Examples 3:
 Find the files contains "CH", including both capital and small letters, in the folder technical.
-The result is returning the path of the file with the name contains "CH", including both capital and small letters, in the folder technical. Same as expected.
+The result is returning the path of the files with the name contains "CH", including both capital and small letters, in the folder technical. Same as expected.
 ```
 find technical -type f -iname "CH*"
 ```
 ![Image](https://sara0112.github.io/cse15l-lab-reports/lab3_06.png)
+
+### (2) -empty
+find the empty file or folders. It is important because when you want to clean up some files or folders with size 0, you can use this to find them first and then delete them.
+#### Examples 1:
+Find the empty files in the folder technical.
+The result is returning nothing because there is no empty files in the folder technical. Same as expected.
+```
+find technical -type f -empty
+```
+![Image](https://sara0112.github.io/cse15l-lab-reports/lab3_07.png)
+#### Examples 2:
+I make a empty file called empty-1.txt in the folder technical. 
+Find the empty files in the folder technical.
+The result is returning the path of empty-1.txt. Same as expected.
+```
+find technical -type f -empty
+```
+![Image](https://sara0112.github.io/cse15l-lab-reports/lab3_08.png)
+#### Examples 3:
+I make a empty folder called empty-folder in the folder technical. 
+Find the empty folders in the folder technical.
+The result is returning the path of empty-folder. Same as expected.
+```
+find technical -type d -empty
+```
+![Image](https://sara0112.github.io/cse15l-lab-reports/lab3_09.png)
