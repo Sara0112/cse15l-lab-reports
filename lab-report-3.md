@@ -36,9 +36,9 @@ find technical -iname "CH*"
 ### (2) -type 
 Determine the type to look for. For example -type d means directory, -type f means file.
 It is useful since when a file and a folder has the same name X in the folder Y and you only need to find the folder X, so you need to use the code below to find it.
-'''
+```
 find Y -type d -name X
-''' 
+```
 #### Examples 1:
 Find the file chapter-1.txt in the folder technical.
 The result is returning the file path of chapter-1.txt. Same as expected.
