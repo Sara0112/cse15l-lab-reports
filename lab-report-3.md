@@ -23,7 +23,7 @@ find technical -iname ChAPtER-1.txt
 ```
 ![Image](https://sara0112.github.io/cse15l-lab-reports/lab3_02.png)
 
-####Examples 3:
+#### Examples 3:
 Find the files contains "CH", including both capital and small letters, in the folder technical.
 The result is returning the path of the files with the name contains "CH", including both capital and small letters, in the folder technical. Same as expected.
 
