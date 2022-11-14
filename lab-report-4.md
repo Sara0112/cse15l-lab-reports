@@ -1,8 +1,8 @@
 # Lab Report 4 - Vim
 
 ## Part 1
-### (1) 
-Using vim to open DocSearchServer.java in terminal. 
+### (1) Using vim to open DocSearchServer.java in terminal
+Open DocSearchServer.java in terminal by using
 ```
 vim DocSearchServer.java<Enter>
 ```
@@ -10,7 +10,7 @@ The image below shows the code of DocSearchServer.java in the terminal.
 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/lab4_01.png)
 
-### (2)
+### (2) Finding all "start" in the DocSearchServer.java
 Finding all "start" in the DocSearchServer.java by using 
 ```
 :%s/start/<Enter>
@@ -19,7 +19,7 @@ The image below shows that the first "start" is found.
 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/lab4_02.png)
 
-### (3)
+### (3) Replacing all "start" to "base" in the DocSearchServer.java 
 Replacing all "start" to "base" in the DocSearchServer.java by using 
 ```
 :%s/start/base/g<Enter>
