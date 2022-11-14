@@ -26,7 +26,7 @@ Replacing all "start" to "base" in the DocSearchServer.java by using
 ```
 The image below shows that all "start" are replaced to "base".
 
-![Image](https://sara0112.github.io/cse15l-lab-reports/lab4_02.png)
+![Image](https://sara0112.github.io/cse15l-lab-reports/lab4_03.png)
 
 ## Part 2
 ### (1) Make edit in Visual Studio Code -> upload file to remote server -> run the test
