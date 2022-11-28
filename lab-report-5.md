@@ -67,11 +67,11 @@ cp -r lib student-submission # copy lib folder to student-submission folder
 
 cd student-submission # go into student-submission folder
 
-if test -e ListExamples.java # test will return true if ListExamples.java can be found in the student-submission folder 
+if test -e ListExamples.java # In this case, test return false since there is no ListExamples.java in student-submission folder. 
 then 
-    echo "  Has ListExamples.java" # student-submission folder has ListExamples.java
+    echo "  Has ListExamples.java" 
 else
-    echo "  Missing ListExamples.java" # student-submission folder do not contain ListExamples.java. In this example, test return false since there is no ListExamples.java in student-submission folder. 
+    echo "  Missing ListExamples.java" # In this example, showing Missing ListExamples.java
     exit 1
 fi
 ```
