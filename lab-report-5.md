@@ -55,3 +55,23 @@ Screenshots of three different student submissions and their reported grade as l
 ![Image](https://sara0112.github.io/cse15l-lab-reports/lab5_3.png)
 
 ##  Trace the Script of the Example of https://github.com/ucsd-cse15l-f22/list-methods-filename
+```
+set -e # stop execution
+
+CPATH=".:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar" # declared variable
+
+rm -rf student-submission # remove the current "student-submission"
+git clone $1 student-submission # clone a student-submission folder from $1 
+cp TestListExamples.java student-submission # copy TestListExamples.java to student-submission folder
+cp -r lib student-submission # copy lib folder to student-submission folder
+
+cd student-submission # go into student-submission folder
+
+if test -e ListExamples.java # test will return true if ListExamples.java can be found in the student-submission folder 
+then 
+    echo "  Has ListExamples.java" # student-submission folder has ListExamples.java
+else
+    echo "  Missing ListExamples.java" # student-submission folder do not contain ListExamples.java. In this example, test return false since there is no ListExamples.java in student-submission folder. 
+    exit 1
+fi
+```
