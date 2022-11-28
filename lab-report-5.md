@@ -72,9 +72,9 @@ cd student-submission # go into student-submission folder
 
 if test -e ListExamples.java # In this case, test return false since there is no ListExamples.java in student-submission folder. 
 then 
-    echo "  Has ListExamples.java" 
+    echo "  Has ListExamples.java" # In this example, did not run this line because there is no ListExamples.java.
 else
     echo "  Missing ListExamples.java" # In this example, showing Missing ListExamples.java
-    exit 1
+    exit 1 # exit code is 1
 fi
 ```
