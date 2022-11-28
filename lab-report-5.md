@@ -46,12 +46,15 @@ fi
 Screenshots of three different student submissions and their reported grade as loaded in the browser (URL like https://localhost:4000/grade?repo=https://github.com...)
 
 ### (1) Example of https://github.com/ucsd-cse15l-f22/list-methods-lab3
+It is an example can be compiled but there is no full credit. 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/lab5_1.png)
 
 ### (2) Example of https://github.com/ucsd-cse15l-f22/list-methods-filename
+It is an example missing ListExamples.java in student-submission folder. 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/lab5_2.png)
 
 ### (3) Example of https://github.com/ucsd-cse15l-f22/list-methods-compile-error
+It is an example with compile error. 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/lab5_3.png)
 
 ##  Trace the Script of the Example of https://github.com/ucsd-cse15l-f22/list-methods-filename
