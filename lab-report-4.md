@@ -41,3 +41,4 @@ I prefer using the second method because it is faster. If I change only one file
 
 ### (4) What about the project or task might factor into your decision one way or another? (If nothing would affect your decision, say so and why!)
 If I need to modify multiple files at the same time to fix a bug, I think it is most convenient to test them on the local server and then upload all of them together.
+If I only need to modify one file, I will use the second method because it is faster.
