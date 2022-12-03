@@ -1,4 +1,4 @@
-# Lab Report 4 - Vim
+e# Lab Report 4 - Vim
 
 ## Part 1
 ### (1) Using vim to open DocSearchServer.java in terminal
@@ -15,6 +15,7 @@ Finding all "start" in the DocSearchServer.java by using
 ```
 :%s/start/<Enter>
 ```
+resulting in > 24 keystrokes.
 The image below shows that the first "start" is found.
 
 ![Image](https://sara0112.github.io/cse15l-lab-reports/lab4_02.png)
