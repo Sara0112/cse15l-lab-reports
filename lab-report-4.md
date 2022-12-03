@@ -1,4 +1,4 @@
-e# Lab Report 4 - Vim
+# Lab Report 4 - Vim
 
 ## Part 1
 ### (1) Using vim to open DocSearchServer.java in terminal
